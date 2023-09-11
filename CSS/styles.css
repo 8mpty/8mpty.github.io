@@ -31,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 90vh;
 }
 
@@ -42,8 +43,10 @@
   font-size: 1rem;
   text-decoration: none;
   padding: 1rem 1rem;
-  border: 2px solid;
+  border: 2px solid transparent;
   text-align: center;
+  caret-color: transparent;
+  cursor: default;
 }
 
 ::placeholder {
