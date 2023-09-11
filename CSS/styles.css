@@ -3,11 +3,7 @@
 
 /* Light Theme Settings */
 @media (prefers-color-scheme: light) {
-  html {
-    background-color: var(--lightwhite);
-    color: var(--darkgrey);
-    font-family: cursive;
-  }
+  html,
   .password {
     background-color: var(--lightwhite);
     color: var(--darkgrey);
@@ -16,11 +12,7 @@
 
 /* Dark Theme Settings */
 @media (prefers-color-scheme: dark) {
-  html {
-    background-color: var(--darkgrey);
-    color: var(--lightwhite);
-    font-family: cursive;
-  }
+  html,
   .password {
     background-color: var(--darkgrey);
     color: var(--lightwhite);
@@ -55,4 +47,19 @@
 
 .passDiv .hidden {
   display: none;
+}
+
+.content {
+  border: 5px solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 10px 250px;
+}
+
+.generatedObject {
+  border: 5px;
+  border-radius: 20px;
 }

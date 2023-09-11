@@ -1,0 +1,60 @@
+/* Light Theme Settings */
+@media (prefers-color-scheme: light) {
+  .sidebar {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+  }
+}
+
+/* Dark Theme Settings */
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+  }
+}
+
+.sidebar {
+  margin-left: 25px;
+  margin-top: 15px;
+  position: fixed;
+  height: calc(100% - 50px);
+  width: 100px;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+
+.sidebar .menu {
+  position: fixed;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .menu i {
+  font-size: 30px;
+}
+
+.sidebar .menu li {
+  margin-top: 10px;
+  padding: 10px 0px;
+  margin-left: -5px;
+  list-style-type: none;
+}
+
+.sidebar:hover {
+  width: 300px;
+}
+.sidebar .menu:hover {
+  cursor: pointer;
+}
+
+.sidebar .menu span {
+  opacity: 0;
+}
+
+.sidebar:hover .menu span {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
