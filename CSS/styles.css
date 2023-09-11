@@ -49,3 +49,7 @@
 ::placeholder {
   text-align: center;
 }
+
+.passDiv .hidden {
+  display: none;
+}
