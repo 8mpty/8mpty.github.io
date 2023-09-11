@@ -1,0 +1,51 @@
+/* Universal Elements */
+@import url(conts.css);
+
+/* Light Theme Settings */
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+    font-family: cursive;
+  }
+  .password {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+  }
+}
+
+/* Dark Theme Settings */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+    font-family: cursive;
+  }
+  .password {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+  }
+}
+
+.passDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.password {
+  outline: none;
+  box-shadow: none;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid;
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}
