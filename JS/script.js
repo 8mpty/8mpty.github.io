@@ -20,10 +20,10 @@ function checkAndUpdateWebsite() {
             <li><a id="passGen"><i class="fa fa-key" aria-hidden="true"></i><span> Password Generator</span></a></li>
             <li><a id="yta"><i class="fa fa-music" aria-hidden="true"></i><span> YT MP3</span></a></li>
           </ul>
-          <ul>
+        </div>
+          <ul class="logout">
             <li><a id="lo" class="lo"><i class="fa fa-sign-out" aria-hidden="true"></i></a><span> Logout</span></li>
           </ul>
-        </div>
         </div>
         <div class="content" style="border: 0px solid;"></div>
       `;
@@ -35,7 +35,9 @@ function Password() {
   const createPassDiv = document.createElement("div");
   createPassDiv.classList.add("passDiv");
   createPassDiv.innerHTML = `
-    <input type="password" id="passinput" class="password">
+    <form autocomplete="off">
+      <input type="password" id="passinput" class="password">
+    </form>
   `;
   document.body.appendChild(createPassDiv);
 
@@ -62,3 +64,23 @@ window.addEventListener("storage", function (e) {
     checkAndUpdateWebsite();
   }
 });
+
+function generateRandomCode() {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const digits = '0123456789'
+  let amt = 15;
+  let code = '';
+
+  let chars = '';
+  chars += characters;
+  chars += digits
+
+  for (let i = 0; i < (amt); i++) {
+    let randomIndex = Math.floor(Math.random() * chars.length);
+    code += chars.substring(randomIndex, randomIndex + 1);
+  }
+
+  return code;
+}
+const asd = generateRandomCode();
+console.log(asd);
