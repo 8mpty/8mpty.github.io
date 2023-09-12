@@ -30,7 +30,7 @@ yta.addEventListener("click", () => {
   if (!go) {
     ObjectCreator(
       "yta",
-      "https://www.youtube.com/",
+      "https://8mpty.github.io/YT_MP3_Downloader/",
       100,
       80,
       "overflow:auto;"
