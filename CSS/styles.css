@@ -1,0 +1,65 @@
+/* Universal Elements */
+@import url(conts.css);
+
+/* Light Theme Settings */
+@media (prefers-color-scheme: light) {
+  html,
+  .password {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+  }
+}
+
+/* Dark Theme Settings */
+@media (prefers-color-scheme: dark) {
+  html,
+  .password {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+  }
+}
+
+.passDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.password {
+  outline: none;
+  box-shadow: none;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border: 2px solid transparent;
+  text-align: center;
+  caret-color: transparent;
+  cursor: default;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.passDiv .hidden {
+  display: none;
+}
+
+.content {
+  border: 5px solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 10px 250px;
+}
+
+.generatedObject {
+  border: 5px;
+  border-radius: 20px;
+}

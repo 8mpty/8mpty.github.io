@@ -1,0 +1,68 @@
+/* Light Theme Settings */
+@media (prefers-color-scheme: light) {
+  .sidebar {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+  }
+}
+
+/* Dark Theme Settings */
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+  }
+}
+
+.sidebar {
+  display: flex;
+  position: relative;
+  margin-left: 25px;
+  margin-top: 15px;
+  position: fixed;
+  height: calc(100% - 50px);
+  width: 100px;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+
+.sidebar .menu , .sidebar .logout{
+  position: fixed;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .menu i , .sidebar .logout i{
+  font-size: 30px;
+}
+
+.sidebar .menu li , .sidebar .logout li{
+  margin-top: 10px;
+  padding: 10px 0px;
+  margin-left: -5px;
+  list-style-type: none;
+}
+
+.sidebar:hover {
+  width: 300px;
+}
+.sidebar .menu:hover, .sidebar .logout:hover {
+  cursor: pointer;
+}
+
+.sidebar .menu span , .sidebar .logout span{
+  opacity: 0;
+}
+
+.sidebar:hover .menu span , .sidebar:hover .logout span{
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.sidebar .logout {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 3.5rem;
+}
