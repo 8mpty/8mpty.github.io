@@ -2,6 +2,7 @@ const homeL = document.getElementById("home");
 const passG = document.getElementById("passGen");
 const yta = document.getElementById("yta");
 const lo = document.getElementById("lo");
+const dct = document.querySelector("#dct");
 
 const contentDiv = document.querySelector(".content");
 
@@ -32,6 +33,20 @@ yta.addEventListener("click", () => {
   ObjectCreator(
     "yta",
     "https://8mpty.github.io/YT_MP3_Downloader/",
+    100,
+    80,
+    "overflow:auto;"
+  );
+});
+
+dct.addEventListener("click", () => {
+  const go = document.querySelector(".generatedObject");
+  if (go) {
+    go.remove();
+  }
+  ObjectCreator(
+    "dct",
+    "https://8mpty.github.io/Double-Click-Test/",
     100,
     80,
     "overflow:auto;"
