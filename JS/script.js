@@ -19,10 +19,11 @@ function checkAndUpdateWebsite() {
             <li><a id="home"><i class="fa fa-home" aria-hidden="true"></i></i><span> Home</span></a></li>
             <li><a id="passGen"><i class="fa fa-key" aria-hidden="true"></i><span> Password Generator</span></a></li>
             <li><a id="yta"><i class="fa fa-music" aria-hidden="true"></i><span> YT MP3</span></a></li>
+            <li><a id="dct"><i class="fa fa-mouse-pointer" aria-hidden="true"></i><span> Double Click Test</span></a></li>
           </ul>
         </div>
           <ul class="logout">
-            <li><a id="lo" class="lo"><i class="fa fa-sign-out" aria-hidden="true"></i></a><span> Logout</span></li>
+            <li><a id="lo" class="lo"><i class="fa fa-sign-out" aria-hidden="true"></i><span> Logout</span></a></li>
           </ul>
         </div>
         <div class="content" style="border: 0px solid;"></div>
@@ -66,16 +67,16 @@ window.addEventListener("storage", function (e) {
 });
 
 function generateRandomCode() {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-  const digits = '0123456789'
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  const digits = "0123456789";
   let amt = 15;
-  let code = '';
+  let code = "";
 
-  let chars = '';
+  let chars = "";
   chars += characters;
-  chars += digits
+  chars += digits;
 
-  for (let i = 0; i < (amt); i++) {
+  for (let i = 0; i < amt; i++) {
     let randomIndex = Math.floor(Math.random() * chars.length);
     code += chars.substring(randomIndex, randomIndex + 1);
   }
