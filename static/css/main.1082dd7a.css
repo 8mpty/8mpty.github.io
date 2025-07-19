@@ -1,0 +1,29 @@
+.error-container {
+    align-items: center;
+    background: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    text-align: center
+}
+
+.error-container h1 {
+    font-size: 8rem;
+    margin-bottom: 1rem
+}
+
+.error-container .title {
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.error-container p {
+    font-size: 1rem;
+    margin: .5rem auto;
+    max-width: 500px
+}
+
+/*# sourceMappingURL=main.1082dd7a.css.map*/
